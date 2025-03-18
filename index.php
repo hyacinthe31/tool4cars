@@ -65,7 +65,7 @@ $client = isset($_COOKIE['client_id']) ? $_COOKIE['client_id'] : 'clienta';
         // Changer de client et recharger la page
         $("#client-select").change(function() {
             let newClient = $(this).val();
-            document.cookie = "client_id=" + newClient + "; path=/";
+            document.cookie = "client_id=" + newClient;
             location.reload();
         });
 
